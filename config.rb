@@ -2,8 +2,6 @@
 require 'slim'
 Slim::Engine.disable_option_validator!
 
-#$. << "./lib"
-require "#{File.dirname(__FILE__)}/lib/showcase"
 I18n.enforce_available_locales = true
 # general settings
 set :encoding, 'utf-8'
@@ -68,61 +66,7 @@ helpers do
   end
 end
 
-# --------------------------------------------
-# Showcase is Pysanka products lister
-# --------------------------------------------
-activate :showcase
-Showcase::Items.list.each do |dir|
-  proxy "/uk/item_#{dir}.html", "product.html",
-    locals: { item: ::Showcase::Item.new(dir), lang: :ua },
-    ignore: true do
-    ::I18n.locale = :uk
-    @lang = :uk
-  end
 
-  proxy "/ja/item_#{dir}.html", "product.html",
-    locals: { item: ::Showcase::Item.new(dir), lang: :ja },
-    ignore: true do
-    ::I18n.locale = :ja
-    @lang = :ja
-  end
-
-  proxy "item_#{dir}.html", "product.html",
-    locals: { item: ::Showcase::Item.new(dir), lang: :en },
-    ignore: true do
-    ::I18n.locale = :en
-    @lang = :en
-  end
-end
-
-
-# --------------------------------------------
-# Events full description
-# --------------------------------------------
-activate :showcase
-data.events.each_index do |number|
-
-  proxy "/uk/event_#{number}.html", "event.html",
-    locals: { event: data.events[number], lang: :ua },
-    ignore: true do
-    ::I18n.locale = :uk
-    @lang = :uk
-  end
-
-  proxy "/ja/event_#{number}.html", "event.html",
-    locals: { event: data.events[number], lang: :ja },
-    ignore: true do
-    ::I18n.locale = :ja
-    @lang = :ja
-  end
-
-  proxy "event_#{number}.html", "event.html",
-    locals: { event: data.events[number], lang: :en },
-    ignore: true do
-    ::I18n.locale = :en
-    @lang = :en
-  end
-end
 
 configure :build do
   # activate :directory_indexes
