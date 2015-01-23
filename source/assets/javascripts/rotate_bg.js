@@ -2,11 +2,15 @@
 $(document).ready(function() {
 
     var nextBG = function() {
-        var imgArray = ['bg1.jpg',
-                        'bg2.jpg',
-                        'bg3.jpg',
-                        'bg4.jpg',
-                        'bg5.jpg'
+        var imgArray = [
+            'bg1.jpg',
+            'bg2.jpg',
+            'bg3.jpg',
+            'bg4.jpg',
+            'bg5.jpg',
+            'bg6.jpg',
+            'bg7.jpg',
+            'bg8.jpg'
                        ];
 
         return "url(/assets/images/bg/" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")";
