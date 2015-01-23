@@ -4,7 +4,7 @@
 //= require retina
 //= require jquery.easing.1.3
 //= require smoothscroll
-//= require jquery-func
+//= require rotate_bg
 
 $(document).ready(function() {
 
