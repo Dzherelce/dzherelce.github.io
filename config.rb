@@ -19,8 +19,6 @@ ignore '*.less'
 
 activate :livereload
 
-activate :i18n, langs: [:en, :uk, :ja]
-
 activate :directory_indexes
 
 page '/', layout: 'layout'
@@ -31,41 +29,6 @@ set :markdown_engine, :redcarpet
 configure :development do
   activate :relative_assets
 end
-
-# --------------------------------------------
-# Localization helpers
-# --------------------------------------------
-helpers do
-  def current_language
-    data.languages[I18n.locale]
-  end
-
-  def current_with_locale(locale)
-    case I18n.locale
-    when :en
-      "#{locale}#{current_page.url}"
-    else
-      current_page.url
-        .sub(%r{^/#{I18n.locale.to_s}}, (locale.to_s == "en" ? '' : locale.to_s))
-        .sub(%r{^/}, "")
-    end
-  end
-
-  # Translate strings that are not part of /locale/ directory.
-  def l(key)
-    key.is_a?(Hash) ? key[I18n.locale.to_s] : key
-  end
-
-  def locale_prefix
-    case I18n.locale
-    when :en
-      ""
-    else
-      "/#{I18n.locale.to_s}"
-    end
-  end
-end
-
 
 
 configure :build do
