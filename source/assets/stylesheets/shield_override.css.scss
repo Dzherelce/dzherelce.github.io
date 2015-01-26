@@ -10,6 +10,12 @@
     -o-background-size: contain;
     background-size: contain;
 
+    @media screen and (max-width: 992px) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     p {
         font-family: 'Izhitsa Cyrillic', arial;
@@ -17,6 +23,10 @@
         span {
             font-family: irmologion,  arial;
 	        font-size: 96px;
+            @media screen and (max-width: 979px) {
+                font-family: 'Izhitsa Cyrillic',  arial;
+	            font-size: 40px;
+            }
         }
     }
 }
