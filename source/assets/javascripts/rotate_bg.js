@@ -2,18 +2,11 @@
 $(document).ready(function() {
 
     var nextBG = function() {
-        var imgArray = [
-            'bg1.jpg',
-            'bg2.jpg',
-            'bg3.jpg',
-            'bg4.jpg',
-            'bg5.jpg',
-            'bg6.jpg',
-            'bg7.jpg',
-            'bg8.jpg'
-                       ];
+        var imgArray = $("#backgrounds img").map(function() {
+            return $(this).attr("src");
+        });
 
-        return "url(/assets/images/bg/" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")";
+        return "url(" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")";
     }
 
     $('#headerwrap').css("background-image", nextBG);
