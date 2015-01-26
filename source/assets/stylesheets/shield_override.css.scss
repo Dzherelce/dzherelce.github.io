@@ -13,6 +13,23 @@
 
     p {
         font-family: 'Izhitsa Cyrillic', arial;
-	    text-shadow: 1px 1px 1px #ddd;
+	    text-shadow: 1px 1px 5px #000, 1px 1px 10px #000, 1px 1px 15px #000 ;
+        span {
+            font-family: irmologion,  arial;
+	        font-size: 96px;
+        }
+    }
+}
+
+.divider1, .divider2, .divider3 {
+    a {
+	    text-shadow: 1px 1px 5px #000, 1px 1px 10px #000 ;
+        }
+}
+
+@each $file, $slant in (divider1 divider2 divider3 divider4 divider5 divider6 divider7) {
+
+    .#{$file} {
+	    background-image: url('/assets/images/bg/#{$file}.jpg');
     }
 }

@@ -11,6 +11,7 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :partials_dir, 'partials'
 set :haml, { :format => :html5 }
+set :fonts_dir,  "fonts-folder"
 
 ignore '*.less'
 
