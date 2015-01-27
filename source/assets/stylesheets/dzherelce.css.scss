@@ -68,9 +68,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .google-calendar {
-    iframe: {
-    min-height: 300px;
-}
+    iframe {
+        min-height: 300px;
+    }
+    @media only screen and (max-width: 768px) {
+        display:  none;
+    }
 }
 
 .shadowed {
@@ -79,14 +82,21 @@ h1,h2,h3,h4,h5,h6 {
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
 }
+
 .inline-image {
     width: 90%;
     height: auto;
-
     img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
+    @media only screen and (max-width: 992px) {
+        img {
+            width: auto;
+            max-height: 400px;
+        }
+    }
+
 }
 
 .narrow {
@@ -102,3 +112,14 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
+
+/* @media (min-width: 768px) { */
+/* @media (max-width: 500px){ */
+/* @media (max-width: 768px){ */
+/* @media (max-width: 479px){ */
+/* @media only screen and (min-width: 992px) { */
+/* @media only screen and (max-width: 838px) { */
+/* @media only screen and (max-width: 768px) { */
+/* @media only screen and (max-width: 568px) { */
+/* @media screen and (max-width: 979px) { */
+/* @media screen and (max-width: 479px) { */
