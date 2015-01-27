@@ -5,6 +5,7 @@
 //= require jquery.easing.1.3
 //= require smoothscroll
 //= require rotate_bg
+//= require resize_inline_image
 
 $(document).ready(function() {
 
