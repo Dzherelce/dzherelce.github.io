@@ -50,7 +50,7 @@ configure :build do
   ignore(/^assets\/stylesheets\/(?!all).*\.css/)
   ignore(/^assets\/javascripts\/(?!all).*\.js/)
   ignore(%r{^assets/stylesheets/colorschemas/.*})
-
+  ignore(%r{^partials/})
 
   # if ENV['CDN_HOST']
   #   activate :asset_host
