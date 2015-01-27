@@ -1,4 +1,4 @@
-
+- @link = "https://www.google.com/calendar/embed?showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=latmai114fhqal5e0s6ha2vi8g%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo"
 #schedule.container-fluid[name="schedule"]
   .row.white
     br
@@ -13,13 +13,13 @@
 
     .col-lg-9
       p.calendar-link
-        a.btn.btn-primary[href="https://www.google.com/calendar/render?tab=mc#g%7Cmonth-3+22941+23105+23099" target="_new"]
+        a.btn.btn-primary[href="#{@link}" target="_new"]
           i.fa.fa-calendar>
           | Відкрити календар в новому вікні
 
       br
       .google-calendar
-        iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=latmai114fhqal5e0s6ha2vi8g%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo" style=" border:solid 1px #ccc " width="800" height="500" frameborder="0" scrolling="no"
+        iframe src="#{@link}" style=" border:solid 1px #ccc " width="800" height="500" frameborder="0" scrolling="no"
 
 
 section.section-divider.textdivider.divider4
