@@ -65,6 +65,9 @@ h1,h2,h3,h4,h5,h6 {
         bottom: 4px solid $light-grey;
         top: 4px solid $light-grey;
     }
+    @media only screen and (max-width: 768px) {
+        display:  none;
+    }
 }
 
 .google-calendar {
