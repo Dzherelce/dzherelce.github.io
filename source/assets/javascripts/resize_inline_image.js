@@ -6,7 +6,6 @@
             function() {
                 $(this).css({"max-height": ((bodyheight - nav_height)* 0.9)});
                 $(this).css({"max-width": (bodywidth * 0.9)});
-                console.log(this.height);
             }
         );
     }
