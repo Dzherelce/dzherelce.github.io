@@ -1,7 +1,7 @@
 /*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery.min.map
 */
-function setInlineImageHeight(){var t=$("#navbar-main").children().first().children().first().height(),e=$(window).height(),n=$(window).width();$(".inline-image img").each(function(){$(this).css({"max-height":.9*(e-t)}),$(this).css({"max-width":.9*n}),console.log(this.height)})}/*!
+function setInlineImageHeight(){var t=$("#navbar-main").children().first().children().first().height(),e=$(window).height(),n=$(window).width();$(".inline-image img").each(function(){$(this).css({"max-height":.9*(e-t)}),$(this).css({"max-width":.9*n})})}/*!
  * Bootstrap v3.1.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
