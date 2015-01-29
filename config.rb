@@ -33,6 +33,11 @@ end
 
 
 helpers do
+  # pretty queoted text
+  def q text
+    "«#{ text }»"
+  end
+
   def scroll_to(title, link)
     "#{ link_to title, link, class: "smoothScroll"}"
   end
