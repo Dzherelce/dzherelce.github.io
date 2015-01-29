@@ -1,9 +1,7 @@
-#teachers.container[name="teachers"]
+#teachers.container-fluid[name="teachers"]
   .row.white
     br
-    h1.centered
-      | Наші вчителі
-
+    h1.centered Наші вчителі
 
     = partial "components/teacher", locals: { name: "Наталя Ковальова", photo: "natalya_k.jpg", offset: 1 }
     = partial "components/teacher", locals: { name: "Наталя Лисенко", photo: "natalya_l.jpg" }
