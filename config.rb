@@ -32,6 +32,17 @@ configure :development do
 end
 
 
+helpers do
+  def scroll_to(title, link)
+    "#{ link_to title, link, class: "smoothScroll"}"
+  end
+
+  def kraiany title=nil
+    "#{link_to title ? title : "«Краяни»", "https://www.facebook.com/ukrainians.japan", target: :new}"
+  end
+end
+
+
 configure :build do
   # activate :directory_indexes
   activate :sprockets
