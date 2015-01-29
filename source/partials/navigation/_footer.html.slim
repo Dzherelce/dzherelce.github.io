@@ -8,35 +8,41 @@
     br
     .col-lg-6
       h3
+        span.icon.icon-phone-3>
         | Контактна інформація
       p
-        span.icon.icon-home
-        |  Телефони
-        br
-        span.icon.icon-mobile
-        |  +81 90-9318-3293, Наталя Ковальова
-        br
-        span.icon.icon-mobile
-        |  +81 090-8119-0423, Наталя Лисенко
-        br
-        span.icon.icon-envelop
-        a<>[href="#"]
-          | dzherelce@googlegroups.com
+
+        span.icon.icon-envelop>
+        => mail_to "dzherelce@googlegroups.com"
         | (потрібна попередня реєстрація)
+
         br
-        span.icon.icon-envelop
-        a<>[href="#"]
-          | natalya.kovalova@gmail.com
+        span.icon.icon-envelop>
+        => mail_to "kraiany@yahoogroups.com"
+        | (потрібна попередня #{link_to "реєстрація)", "https://groups.yahoo.com/neo/groups/kraiany/info"}
+
+        br
+        span.icon.icon-mobile>
+        | 090-9318-3293 (Наталя Ковальова),
+          090-8119-0423 (Наталя Лисенко)
+        br
+        span.icon.icon-envelop>
+        = mail_to "natalya.kovalova@gmail.com"
+
+
         br
         span.icon.icon-facebook
-        a[href="#"]
-          |  https://www.facebook.com/dzherelce
-    .col-lg-4
-      h3
-        | Товариство «Краяни»
-      p
-        |  «Краяни» - товариство українців, що проживують в Японії - засноване, як електронна поштова розсилка у 2000-му році. Пізніше групувалося навколо веб-майданчику, та #{kraiany "групи у Фейсбук"}.
-    .col-lg-2
+        = link_to "https://www.facebook.com/dzherelce"
+        br
+        span.icon.icon-facebook
+        = link_to "https://www.facebook.com/ukrainians.japan"
+
+    .col-lg-4.col-md-4
+      h3 Товариство «Краяни»
+
+      p «Краяни» - товариство українців, що проживують в Японії - засноване, як електронна поштова розсилка у 2000-му році. Пізніше групувалося навколо веб-майданчику, та #{kraiany "групи у Фейсбук"}.
+
+    .col-lg-2.col-md-2
       .inline-image.shadowed
         = image_tag "kraiany_logo_300.png"
 
