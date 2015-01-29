@@ -4,7 +4,7 @@
     h1.centered
       | Фото альбоми
     hr
-    .col-lg-6.col-lg-offset-1
+    .col-lg-6.col-lg-offset-1.col-md-6.col-md-offset-1
       p
         a.btn.btn-lg.btn-primary[target="_new" href="http://dzherelce.github.io/web_album_2009_2010"]
           i.icon.icon-camera>
@@ -24,10 +24,40 @@
           i.icon.icon-camera>
           | 2012-2013 навчальний рік
 
-    / h1.centered
-    /   | Відео
-    / hr
-    / .col-lg-6.col-lg-offset-1
+    h1.centered
+      | Відео
+    hr
+
+    .col-lg-6
+
+      h2 Вертеп
+      p Різдвяний Вертеп поставлений для дітей Джерельця батками та вчителями школи. (2010 рік)
+
+      h3 Перша частина
+      = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
+
+      h3 Друга частина
+      = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
+
+      h3 Слайди
+      = partial "components/youtube", locals: { id: "EztiSKubHXU" }
+
+    .col-lg-6
+      h2 Господи помилуй нас
+      p Виступ дітей та батьків Джерельця з Катериною Ґудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, 2014 р.
+
+      = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
+
+      hr
+      h2 Шевченківські читання
+
+      p Діти Джерельця читають вірші Шевченка на день народження Кобзаря. 9 березня 2013 року.
+
+      = partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
+      = partial "components/youtube", locals: { id: "jEh5VKj7q98" }
+      = partial "components/youtube", locals: { id: "TliAKcKr7ag" }
+      = partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
+      = partial "components/youtube", locals: { id: "R_yGi_1_afE" }
 
 section.section-divider.textdivider.divider9
   .container
