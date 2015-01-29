@@ -4,51 +4,21 @@
     h1.centered
       | Наші вчителі
 
-    .col-lg-2.col-lg-offset-1.centered
-        = image_tag "teachers/natalya_k.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Наталя Ковальова
 
-    .col-lg-2.centered
-        = image_tag "teachers/natalya_l.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Наталя Лисенко
+    = partial "components/teacher", locals: { name: "Наталя Ковальова", photo: "natalya_k.jpg", offset: 1 }
+    = partial "components/teacher", locals: { name: "Наталя Лисенко", photo: "natalya_l.jpg" }
+    = partial "components/teacher", locals: { name: "Оксана Свистак", photo: "oksana.jpg" }
+    = partial "components/teacher", locals: { name: "Наталя Журова", photo: "natalya_z.jpg" }
+    = partial "components/teacher", locals: { name: "Ірина Ветрова", photo: "iryna.jpg" }
 
-    .col-lg-2.centered
-        = image_tag "teachers/oksana.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Оксана Свистак
-
-    .col-lg-2.centered
-        = image_tag "teachers/natalya_z.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Наталя Журова
-
-    .col-lg-2.centered
-        = image_tag "teachers/iryna.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Ірина Ветрова
 
   .row.white
 
-    .col-lg-2.col-lg-offset-2.centered
-        = image_tag "teachers/varvara.jpg", class: "img img-circle", width: 120, height: :auto
-        h4
-          b Варвара Йошіда
-    .col-lg-2.centered
-      = image_tag "teachers/andriy.jpg", class: "img img-circle", width: 120, height: :auto
-      h4
-        b Андрій Міщак
+    = partial "components/teacher", locals: { name: "Варвара Йошіда", photo: "varvara.jpg", offset: 2 }
+    = partial "components/teacher", locals: { name: "Андрій Міщак", photo: "andriy.jpg" }
+    = partial "components/teacher", locals: { name: "пані Надія", photo: "" }
+    = partial "components/teacher", locals: { name: "Валентина Хірокава", photo: "valentyna.jpg" }
 
-    .col-lg-2.centered
-      = image_tag "teachers/", class: "img img-circle", width: 120, height: :auto
-      h4
-        b пані Надія
-
-    .col-lg-2.centered
-      = image_tag "teachers/valentyna.jpg", class: "img img-circle", width: 120, height: :auto
-      h4
-        b Валентина Хірокава
 
 section.section-divider.textdivider.divider1
   .container

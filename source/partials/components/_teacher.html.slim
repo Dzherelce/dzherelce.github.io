@@ -1,0 +1,10 @@
+-if locals[:offset]
+  .col-lg-2.centered[class="col-lg-offset-#{offset}"]
+    = image_tag "teachers/#{photo}", class: "img img-circle", width: 120, height: :auto
+    h4
+      b= name
+-else
+  .col-lg-2.centered
+    = image_tag "teachers/#{photo}", class: "img img-circle", width: 120, height: :auto
+    h4
+      b= name
