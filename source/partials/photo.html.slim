@@ -2,7 +2,7 @@
   .row.white
     br
     h1.centered
-      | Фото альбоми
+      | Фото альбоми та відео
     hr
     .col-lg-6.col-lg-offset-1.col-md-6.col-md-offset-1
       p
@@ -24,45 +24,51 @@
           i.icon.icon-camera>
           | 2012-2013 навчальний рік
 
-    h1.centered
-      | Відео
-    hr
 
-    .col-lg-6
-
-      h2 Вертеп
-      p Різдвяний Вертеп поставлений для дітей Джерельця батками та вчителями школи. (2010 рік)
-
-      h3 Перша частина
-      = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
-
-      h3 Друга частина
-      = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
-
-      h3 Слайди
-      = partial "components/youtube", locals: { id: "EztiSKubHXU" }
-
-    .col-lg-6
-      h2 Господи помилуй нас
-      p Виступ дітей та батьків Джерельця з Катериною Ґудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, 2014 р.
-
-      = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
-
+    .row
+      h2.centered Вертеп
       hr
-      h2 Шевченківські читання
+      p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
 
-      p Діти Джерельця читають вірші Шевченка на день народження Кобзаря. 9 березня 2013 року.
+      .col-md-4
+        h3 Перша частина
+        = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
 
-      = partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
-      = partial "components/youtube", locals: { id: "jEh5VKj7q98" }
-      = partial "components/youtube", locals: { id: "TliAKcKr7ag" }
-      = partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
-      = partial "components/youtube", locals: { id: "R_yGi_1_afE" }
+      .col-md-4
+        h3 Друга частина
+        = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
 
-section.section-divider.textdivider.divider9
+      .col-md-4
+        h3 Слайди
+        = partial "components/youtube", locals: { id: "EztiSKubHXU" }
+
+    .row
+      h2.centered Шевченківські читання
+      hr
+
+      p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2013 року.
+
+      .col-md-4= partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
+      .col-md-4= partial "components/youtube", locals: { id: "jEh5VKj7q98" }
+      .col-md-4= partial "components/youtube", locals: { id: "TliAKcKr7ag" }
+      .col-md-4= partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
+      .col-md-4= partial "components/youtube", locals: { id: "R_yGi_1_afE" }
+
+    .row
+      h2.centered Господи помилуй нас
+      hr
+
+      p Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, 2014 р.
+
+      .col-md-6.col-md-offset-3
+        = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
+
+
+
+section.section-divider.textdivider.divider6
   .container
     h1
-      |
+      | Майбутнє України народжується тут!
     hr
     p
-      |
+      | Наші діти - наше майбутнє і майбутнє України. Виховаємо наше майбутнє разом.
