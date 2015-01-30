@@ -51,29 +51,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $caviar;
 }
 
-.google-form {
-    width: 100%;
-    padding: {
-        top: 0;
-        bottom: 0;
-    }
-    border: {
-        bottom: 4px solid $light-grey;
-        top: 4px solid $light-grey;
-    }
-    @media only screen and (max-width: 768px) {
-        display:  none;
-    }
-}
-
-.google-calendar {
-    iframe {
-        min-height: 300px;
-    }
-    @media only screen and (max-width: 768px) {
-        display:  none;
-    }
-}
 
 .shadowed {
     -webkit-filter: drop-shadow(5px 5px 15px rgba(0,0,0,1));
