@@ -1,15 +1,18 @@
 
 $(document).ready(function() {
 
-    var nextBG = function() {
-        var imgArray = $("#backgrounds img").map(function() {
-            return $(this).attr("src");
-        });
+    var currentIdx = 0;
+    var imgArray = $("#backgrounds img").map(function() {
+        return $(this).attr("src");
+    });
 
-        return "url(" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")";
+    var nextBG = function() {
+        currentIdx++;
+        if (currentIdx == imgArray.length) { currentIdx = 0 }
+        return "url(" + imgArray[currentIdx] + ")";
     }
 
-    $('#headerwrap').css("background-image", nextBG);
+    $('#headerwrap').css("background-image",  "url(" + imgArray[0] + ")");
 
     setInterval(function(){
         $('#headerwrap').fadeOut('slow', function() {
