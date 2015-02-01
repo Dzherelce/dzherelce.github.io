@@ -25,17 +25,14 @@
       hr
       p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
 
-      .col-md-4
-        h3 Перша частина
-        = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
+      = partial "components/youtube",
+      locals: { title: "Перша частина", id: "yfs93n-JYPY" }
 
-      .col-md-4
-        h3 Друга частина
-        = partial "components/youtube", locals: { id: "yfs93n-JYPY" }
+      = partial "components/youtube",
+      locals: { id: "yfs93n-JYPY" , title: "Друга частина"}
 
-      .col-md-4
-        h3 Слайди
-        = partial "components/youtube", locals: { id: "EztiSKubHXU" }
+      = partial "components/youtube",
+      locals: { id: "EztiSKubHXU", title: "Слайди" }
 
     .row
       h2.centered Шевченківські читання
@@ -43,12 +40,12 @@
 
       p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
 
-      .col-md-4= partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
-      .col-md-4= partial "components/youtube", locals: { id: "jEh5VKj7q98" }
-      .col-md-4= partial "components/youtube", locals: { id: "TliAKcKr7ag" }
+      = partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
+      = partial "components/youtube", locals: { id: "jEh5VKj7q98" }
+      = partial "components/youtube", locals: { id: "TliAKcKr7ag" }
 
-      .col-md-4.col-md-offset-2= partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
-      .col-md-4= partial "components/youtube", locals: { id: "R_yGi_1_afE" }
+      = partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
+      = partial "components/youtube", locals: { id: "R_yGi_1_afE" }
 
     .row
       h2.centered Господи помилуй нас
@@ -56,8 +53,7 @@
 
       p.centered Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, жовтень 2014 р.
 
-      .col-md-6.col-md-offset-3
-        = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
+      = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
 
 
 
