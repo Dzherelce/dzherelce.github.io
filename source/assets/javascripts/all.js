@@ -7,7 +7,7 @@
 //= require rotate_bg
 //= require resize_inline_image
 //= require google_analytics
-
+//= require jquery.backstretch.min
 $(document).ready(function() {
 
 
