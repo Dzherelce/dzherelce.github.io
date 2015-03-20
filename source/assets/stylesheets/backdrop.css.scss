@@ -1,0 +1,24 @@
+@mixin backdrop-gradient($color, $color2) {
+    background-color: $color;
+    background-image:
+    radial-gradient(
+            ellipse at top left,
+            $color, $color2
+        );
+}
+
+.backstretch:after {
+    content: "\A";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include backdrop-gradient(rgba(64, 64, 64, 0.3), rgba(0,0,0,0.7))
+    /* background-image: linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+    /* background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+    /* background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+    /* background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+    /* background-image: -ms-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+    /* background-image: linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(0,0,0,0.7)); */
+}
