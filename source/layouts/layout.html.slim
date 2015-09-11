@@ -1,0 +1,22 @@
+doctype html
+html[lang="uk"]
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content="#{data.site.description}"]
+    meta[name="author" content="#{data.site.author}"]
+    link[rel="shortcut icon" href="assets/ico/favicon.png"]
+    title= data.site.title
+
+    link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    link[href="http://allfont.ru/css/?fonts=izhitsa-cyrillic" rel="stylesheet" type="text/css"]
+
+    = javascript_include_tag "all.js"
+
+  body[data-spy="scroll" data-offset="0" data-target="#navbar-main"]
+    = partial "navigation/top_nav"
+
+    = yield
+
+    = partial "navigation/footer"
+    = stylesheet_link_tag "all.css"

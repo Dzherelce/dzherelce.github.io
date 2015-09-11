@@ -1,0 +1,66 @@
+#photo.container[name="photo"]
+  .row.white
+    br
+    h1.centered Фотоальбоми та відео
+    hr
+    .row
+      = partial "components/album",
+      locals: { album: "web_album_2009_2010", text: "2009-2010 навчальний рік"}
+
+      = partial "components/album",
+      locals: { album: "web_album_2010_2011", text: "2010-2011 навчальний рік"}
+
+      = partial "components/album",
+      locals: { album: "web_album_2011_2012", text: "2011-2012 навчальний рік"}
+
+      = partial "components/album",
+      locals: { album: "web_album_2012_2013", text: "2012-2013 навчальний рік"}
+
+      = partial "components/album",
+      locals: { album: "Album_2013_2014", text: "2013-2014 навчальний рік"}
+
+
+    .row
+      h2.centered Вертеп
+      hr
+      p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
+
+      = partial "components/youtube",
+      locals: { title: "Перша частина", id: "yfs93n-JYPY" }
+
+      = partial "components/youtube",
+      locals: { id: "yfs93n-JYPY" , title: "Друга частина"}
+
+      = partial "components/youtube",
+      locals: { id: "EztiSKubHXU", title: "Слайди" }
+
+    .row
+      h2.centered Шевченківські читання
+      hr
+
+      p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
+
+      = partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
+      = partial "components/youtube", locals: { id: "jEh5VKj7q98" }
+      = partial "components/youtube", locals: { id: "TliAKcKr7ag" }
+
+      = partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
+      = partial "components/youtube", locals: { id: "R_yGi_1_afE" }
+
+    .row
+      h2.centered Господи помилуй нас
+      hr
+
+      p.centered Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, жовтень 2014 р.
+
+      = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
+
+
+
+section.section-divider.textdivider.divider6
+  .container
+    h1
+      | Майбутнє України народжується тут!
+    hr
+    p
+      | Наші діти - наше майбутнє і майбутнє України. Виховаємо наше майбутнє разом.

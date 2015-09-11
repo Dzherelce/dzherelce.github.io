@@ -1,0 +1,39 @@
+- @link = "https://www.google.com/calendar/embed?showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=latmai114fhqal5e0s6ha2vi8g%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo"
+#schedule.container-fluid[name="schedule"]
+  .row.white
+    br
+    h1.centered
+      | Розклад занять школи #{q "Джерельце"}
+
+    hr
+    .col-lg-3.col-md-3
+      p Уроки проводяться першої та третьої неділі кожного місяця з 9:00 до 12:00. Після маленької перерви на обід - майстер класи.
+
+      P Розклад буде поновлюватися в залежності від наявності приміщення та, можливо, інших умов. Не забудьте перевірити цю сторінку перед заняттям. Слідкуйте за змінами у плані занять в календарі поруч.
+      .inline-image.shadowed
+        = image_tag "side_calendar.png"
+
+    .col-lg-9.col-md-9
+      p.calendar-link.centered
+        a.btn.btn-primary.btn-lg.btn-block[href="#{@link}" target="_new"]
+          i.fa.fa-calendar>
+          | Відкрити календар в новому вікні
+
+      .row
+        .col-lg-12.hidden-sm.hidden-xs
+          iframe src="#{@link}" style=" border:solid 1px #ccc " width="800" height="500" frameborder="0" scrolling="no"
+
+
+section.section-divider.textdivider.divider4
+  .container
+    h1
+      | #{q "Перше вересня"} Наталя Забіла
+    hr
+    p Жовтіє листя на тополі.
+      Летять у синяві хмарки.
+      Відкриті навстіж двері в школі –
+      Ідуть до школи першачки.
+      З гілок тополь злітає листя,
+      Кружляє й падає до ніг.
+      Уперше діти урочисто
+      Переступають цей поріг.

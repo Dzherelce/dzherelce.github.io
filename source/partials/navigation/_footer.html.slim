@@ -1,0 +1,55 @@
+#contact.container[name="contact"]
+  .row
+    br
+    h1.centered
+      | Дякуємо за Вашу увагу!
+    hr
+    br
+    br
+    .col-md-6
+      h3
+        span.icon.icon-phone-3>
+        | Контактна інформація
+      p
+
+        span.icon.icon-envelop>
+        => mail_to "dzherelce@googlegroups.com"
+        | (потрібна попередня реєстрація)
+
+        br
+        span.icon.icon-envelop>
+        => mail_to "kraiany@yahoogroups.com"
+        | (потрібна попередня #{link_to "реєстрація)", "https://groups.yahoo.com/neo/groups/kraiany/info"}
+
+        br
+        span.icon.icon-mobile>
+        | 090-9318-3293 (Наталя Ковальова),
+          090-8119-0423 (Наталя Лисенко)
+        br
+        span.icon.icon-envelop>
+        = mail_to "natalya.kovalova@gmail.com"
+
+
+        br
+        span.icon.icon-facebook
+        = link_to "https://www.facebook.com/dzherelce", "https://www.facebook.com/dzherelce"
+        br
+        span.icon.icon-facebook
+        = link_to "https://www.facebook.com/ukrainians.japan", "https://www.facebook.com/ukrainians.japan"
+
+    .col-md-4
+      h3 Товариство «Краяни»
+
+      p «Краяни» - товариство українців, що проживують в Японії - засноване, як електронна поштова розсилка у 2000-му році. Пізніше групувалося навколо веб-майданчику, та #{kraiany "групи у Фейсбук"}.
+
+    .col-md-2.centered
+      .inline-image.shadowed
+        = image_tag "kraiany_logo_300.png"
+
+#footerwrap
+  .container
+    h4
+      | Дизайн
+      a<[href="http://dmytro.github.io"]
+        | Дмитро Ковальов
+      |  - Copyright 2015
