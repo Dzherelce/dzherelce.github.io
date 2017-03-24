@@ -1,0 +1,42 @@
+#photo.container[name="photo"]
+  .row.white
+    br
+    h1.centered Фотоальбоми та відео
+    hr.centered
+    .container
+      .row
+        .col-sm-10.col-md-8
+          p На цій сторінці зібрані відео та фотоматеріали з заходів та уроків Української школи #{q "Джерельце"}, фестивалів, концертів та інших подій за участі учнів та батьків школи.
+
+
+
+      = partial "components/album",
+      locals: { album: "Album_2014_2015", text: "2014-2015 навчальний рік"}
+
+    .row
+      = partial "components/albums_container" do
+        = partial "cards/2013"
+        = partial "cards/2012"
+        = partial "cards/2011"
+        = partial "cards/2010"
+        = partial "cards/2009"
+
+
+
+    .row
+      h2.centered Господи помилуй нас
+      hr
+
+      p.centered Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, жовтень 2014 р.
+
+      = partial "components/youtube", locals: { id: "BeWmCGYChAI" }
+
+
+
+section.section-divider.textdivider.divider6
+  .container
+    h1
+      | Майбутнє України народжується тут!
+    hr
+    p
+      | Наші діти - наше майбутнє і майбутнє України. Виховаємо наше майбутнє разом.

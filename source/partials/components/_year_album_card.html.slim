@@ -1,0 +1,13 @@
+.col-sm-6.col-md-4
+  .thumbnail
+    = image_tag image
+      alt="#{title}"
+
+    .caption
+      h3 #{title}
+      div.card-description
+        = yield
+      p
+      a.btn.btn-primary target="_new" href="#{link}" role="button"
+        i.icon.icon-camera>
+        = link_text
