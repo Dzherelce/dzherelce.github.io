@@ -33,6 +33,14 @@ end
 
 
 helpers do
+
+  def year_album(image: "", title: "", link: "#", link_text: "Переглянути", &block)
+    partial "components/year_album_card",
+      locals: {  image: image, title: title, link: link, link_text: link_text } do
+      yield
+    end
+  end
+
   # pretty queoted text
   def q text
     "«#{ text }»"
