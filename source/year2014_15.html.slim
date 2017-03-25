@@ -1,0 +1,46 @@
+---
+layout: layout
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2014-2015
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+
+      =image_tag "photo/2014/DSC05059.jpg"
+      =image_tag "photo/2014/DSC05091.jpg"
+      =image_tag "photo/2014/DSC05099.jpg"
+      =image_tag "photo/2014/DSC05121.jpg"
+      =image_tag "photo/2014/DSC05172.jpg"
+      =image_tag "photo/2014/DSC05210.jpg"
+      =image_tag "photo/2014/DSC05245.jpg"
+      =image_tag "photo/2014/IMG_4640.jpg"
+      =image_tag "photo/2014/IMG_4649.jpg"
+      =image_tag "photo/2014/IMG_4664.jpg"
+      =image_tag "photo/2014/IMG_4668.jpg"
+      =image_tag "photo/2014/IMG_4684.jpg"
+      =image_tag "photo/2014/IMG_8145.jpg"
+      =image_tag "photo/2014/IMG_8152.jpg"
+      =image_tag "photo/2014/IMG_8155.jpg"
+      =image_tag "photo/2014/IMG_8171.jpg"
+      =image_tag "photo/2014/IMG_8186.jpg"
+      =image_tag "photo/2014/IMG_8191.jpg"
+      =image_tag "photo/2014/IMG_8210.jpg"
+      =image_tag "photo/2014/IMG_8225.jpg"
+      =image_tag "photo/2014/IMG_8246.jpg"
+      =image_tag "photo/2014/IMG_8250.jpg"
+
+
+= partial "components/albums_container" do
+  = year_album link: "http://dzherelce.github.io/Album_2014_2015/", title: "Фотоальбом", image: "https://github.com/Dzherelce/Album_2014_2015/raw/master/source/assets/images/01-pershastorinka-x1.jpg" do
+    p Сторінки випускного фотоальбому #{q "Джерельця"}
+
+  h2.centered Господи помилуй нас
+  hr
+
+  p.centered Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, жовтень 2014 р.
+
+  = partial "components/youtube", locals: { id: "BeWmCGYChAI" }

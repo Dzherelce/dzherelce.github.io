@@ -1,0 +1,51 @@
+---
+layout: layout
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2013-2014
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+      =image_tag "photo/2013/DSCF6041.jpg"
+      =image_tag "photo/2013/DSCF6047.jpg"
+      =image_tag "photo/2013/DSCF6052.jpg"
+      =image_tag "photo/2013/DSCF6057.jpg"
+      =image_tag "photo/2013/DSCF6974.jpg"
+      =image_tag "photo/2013/DSCF6998.jpg"
+      =image_tag "photo/2013/DSCF7003.jpg"
+      =image_tag "photo/2013/DSCF7005.jpg"
+      =image_tag "photo/2013/DSCF7006.jpg"
+      =image_tag "photo/2013/DSC_0176.jpg"
+      =image_tag "photo/2013/DSC_0189.jpg"
+      =image_tag "photo/2013/DSC_0195.jpg"
+      =image_tag "photo/2013/IMG_0863.jpg"
+      =image_tag "photo/2013/IMG_0870.jpg"
+      =image_tag "photo/2013/IMG_0874.jpg"
+      =image_tag "photo/2013/IMG_0877.jpg"
+      =image_tag "photo/2013/IMG_1114.jpg"
+      =image_tag "photo/2013/IMG_1118.jpg"
+      =image_tag "photo/2013/IMG_1367.jpg"
+      =image_tag "photo/2013/IMG_1368.jpg"
+      =image_tag "photo/2013/IMG_6102.jpg"
+      =image_tag "photo/2013/IMG_6108.jpg"
+      =image_tag "photo/2013/IMG_6122.jpg"
+      =image_tag "photo/2013/IMG_6130.jpg"
+
+= partial "components/albums_container" do
+  = year_album link: "http://dzherelce.github.io/Album_2013_2014/", title: "Фотоальбом", image: "photo/2013/2013_2014.png" do
+    p Сторінки випускного фотоальбому #{q "Джерельця"}
+
+  h2.centered Шевченківські читання
+  hr
+
+  p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
+
+  = partial "components/youtube", locals: { id: "n2JIPDZWAHk" }
+  = partial "components/youtube", locals: { id: "jEh5VKj7q98" }
+  = partial "components/youtube", locals: { id: "TliAKcKr7ag" }
+
+  = partial "components/youtube", locals: { id: "lBhWJYhJ3WI" }
+  = partial "components/youtube", locals: { id: "R_yGi_1_afE" }

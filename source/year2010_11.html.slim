@@ -1,0 +1,42 @@
+---
+layout: layout
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2010-2011
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+      =image_tag "photo/2010/IMG_7272.jpg"
+      =image_tag "photo/2010/IMG_7279.jpg"
+      =image_tag "photo/2010/IMG_7293.jpg"
+      =image_tag "photo/2010/IMG_7295.jpg"
+      =image_tag "photo/2010/IMG_7302.jpg"
+      =image_tag "photo/2010/IMG_7314.jpg"
+      =image_tag "photo/2010/IMG_7319.jpg"
+      =image_tag "photo/2010/IMG_7592.jpg"
+      =image_tag "photo/2010/IMG_7600.jpg"
+      =image_tag "photo/2010/IMG_7609.jpg"
+      =image_tag "photo/2010/IMG_7612.jpg"
+      =image_tag "photo/2010/IMG_9700.jpg"
+      =image_tag "photo/2010/IMG_9709.jpg"
+
+= partial "components/albums_container" do
+  = year_album link: "http://dzherelce.github.io/web_album_2010_2011", title: "Фотоальбом", image: "photo/2010/2010_2011.png" do
+    p Уроки та свята #{q "Джерельця"}
+
+
+  h2.centered Вертеп
+  hr
+  p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
+
+  = partial "components/youtube",
+  locals: { title: "Перша частина", id: "yfs93n-JYPY" }
+
+  = partial "components/youtube",
+  locals: { id: "yfs93n-JYPY" , title: "Друга частина"}
+
+  = partial "components/youtube",
+  locals: { id: "EztiSKubHXU", title: "Слайди" }
