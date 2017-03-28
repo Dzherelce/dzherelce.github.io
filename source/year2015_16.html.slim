@@ -1,0 +1,53 @@
+---
+layout: layout
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2015-2016
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+
+      =image_tag "photo/2015/"
+
+.container
+  .row.white
+
+    h1.centered Відео
+    hr
+
+  .container
+    .row
+
+      = partial "components/albums_container" do
+
+        p.centered Записи з другого Українського Фестивалю #{q "День України"} в м. Йокогама 15 листопада 2015.
+
+        = partial "components/video_card", locals: { id: "i0M6aVQOPqE", title: "Трейлер", source: :youtube }
+        = partial "components/video_card", locals: { id: "FQvFdIoVrm0", title: "Перше відділення фестивалю", source: :youtube }
+        = partial "components/video_card", locals: { id: "XHD81TMxF5s", title: "Друге відлілення фестивалю", source: :youtube }
+
+
+      = partial "components/albums_container" do
+        h2.centered Українське різдво в Йокогамі
+
+
+        = partial "components/video_card", locals: { id: "bwtzhuNmV6o", title: "", source: :youtube }
+
+
+        .container.row
+        p В листопді-грудні 2015 року українська громада #{q "Краяни"} і школа #{q "Джерельце"} приймали участь в організації та проведенні Українського Різдва. Для цього уряд Йокогами надав для оздоблення музей "Будинок дипломата". В грудні також учні та батьки школи дали концертний виступ в парку біля музею.
+
+        .col-md-6
+          h2.centered Свято Святого Миколая у #{q "Джерельці"}
+
+          = partial "components/video_card", locals: { id: "nXzI1_PC_po", title: "", source: :youtube }
+        hr
+      .row
+        .col-md-6
+
+          = partial "components/video_card", locals: { id: "_LX2lEC4uJE", title: "Мурчик-няв", source: :youtube }
+          p Виступ наймолодшої групи на святі Колодія. Українська школа „Джерельце“ в Токіо, 2016 рік.
+          .row
