@@ -32,11 +32,11 @@ layout: layout
   hr
   p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
 
-  = partial "components/youtube",
-  locals: { title: "Перша частина", id: "yfs93n-JYPY" }
+  = partial "components/video_card",
+  locals: { source: :youtube, id: "yfs93n-JYPY", title: "Перша частина"  }
 
-  = partial "components/youtube",
-  locals: { id: "yfs93n-JYPY" , title: "Друга частина"}
+  = partial "components/video_card",
+  locals: { id: "yfs93n-JYPY" , source: :youtube,  title: "Друга частина"}
 
-  = partial "components/youtube",
-  locals: { id: "EztiSKubHXU", title: "Слайди" }
+  = partial "components/video_card",
+  locals: { id: "EztiSKubHXU", source: :youtube,  title: "Слайди" }
