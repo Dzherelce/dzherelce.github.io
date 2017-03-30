@@ -34,18 +34,30 @@ layout: layout
       =image_tag "photo/2013/IMG_6122.jpg"
       =image_tag "photo/2013/IMG_6130.jpg"
 
-= partial "components/albums_container" do
-  = year_album link: "http://dzherelce.github.io/Album_2013_2014/", title: "Фотоальбом", image: "photo/2013/2013_2014.png" do
-    p Сторінки випускного фотоальбому #{q "Джерельця"}
 
-  h2.centered Шевченківські читання
-  hr
+.row
+  p
+.container
 
-  p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
+  = partial "components/albums_container" do
+    = year_album link: "http://dzherelce.github.io/Album_2013_2014/", title: "Фотоальбом", image: "https://github.com/Dzherelce/Album_2013_2014/raw/master/source/assets/images/00_obkladynka_1st.jpg" do
+      p Сторінки випускного фотоальбому #{q "Джерельця"}
 
-  = partial "components/video_card", locals: { id: "n2JIPDZWAHk", source: :youtube }
-  = partial "components/video_card", locals: { id: "jEh5VKj7q98", source: :youtube }
-  = partial "components/video_card", locals: { id: "TliAKcKr7ag", source: :youtube }
+    = year_album link: "https://goo.gl/photos/F57rMG8i18i2CMCr7", title: "Свято колодія", image: "photo/2013/IMG_2623-COLLAGE.jpg" do
+      p Свято Колодія, вареники 30 березня 2014, у школі #{q "Джерельце"}.
 
-  = partial "components/video_card", locals: { id: "lBhWJYhJ3WI", source: :youtube }
-  = partial "components/video_card", locals: { id: "R_yGi_1_afE", source: :youtube }
+
+  = partial "components/albums_container" do
+
+    h2.centered Шевченківські читання
+    hr
+
+
+    p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
+
+    = partial "components/video_card", locals: { id: "n2JIPDZWAHk", source: :youtube }
+    = partial "components/video_card", locals: { id: "jEh5VKj7q98", source: :youtube }
+    = partial "components/video_card", locals: { id: "TliAKcKr7ag", source: :youtube }
+
+    = partial "components/video_card", locals: { id: "lBhWJYhJ3WI", source: :youtube }
+    = partial "components/video_card", locals: { id: "R_yGi_1_afE", source: :youtube }
