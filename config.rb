@@ -34,6 +34,23 @@ end
 
 helpers do
 
+  def slideshow(slideshow_name)
+    partial "components/photo_slides", locals: {slide_show: slideshow_name.to_s }
+  end
+
+  def youtube(id: "", title: "")
+    video source: :youtube, id: id, title: title
+  end
+
+  def vimeo(id: "", title: "")
+    video source: :vimeo, id: id, title: title
+  end
+
+  def video(id: "", title: "", source: :youtube, &block)
+    partial "components/video_card",
+      locals: {  title: title, id: id, source: source }
+  end
+
   def year_album(image: "", title: "", link: "#", link_text: "Переглянути", &block)
     partial "components/photo_card",
       locals: {  image: image, title: title, link: link, link_text: link_text } do
