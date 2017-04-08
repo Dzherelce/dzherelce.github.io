@@ -30,6 +30,7 @@
         }
     }
     .thumbnail {
+        cursor: pointer;
         position: relative;
         @media (min-width:769px) {
             /* Not for video */
