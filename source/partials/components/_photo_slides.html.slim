@@ -1,0 +1,26 @@
+- images = data.page.slides["#{slide_show}"].items
+- base = data.page.slides["#{slide_show}"].base
+.col-sm-10.col-sm-offset-1.col-md-5.col-md-offset-1.col-lg-5.col-lg-offset-1.col-xl-4.card-container
+  .thumbnail[id="#{slide_show}_click"]
+    = image_tag "#{base}/#{images.first}"
+      alt="#{title}"
+
+    .caption
+      h3 Слайдшоу
+
+  .slideshow-viewer[id="#{slide_show}_view"]
+    .stop-button.fa.fa-window-close.fa-3x[id="#{slide_show}_stop"]
+  .slideshow-list[id="#{slide_show}_list"]
+    - images.each do |image|
+      = image_tag "#{base}/#{image}"
+
+  javascript:
+    $(document).ready(function() {
+      $("##{slide_show}_click").click(function() {
+        runSlideShow("#{slide_show}");
+      });
+
+      $("##{slide_show}_stop").click(function() {
+        stopSlideShow("#{slide_show}");
+      });
+    });
