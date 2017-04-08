@@ -155,12 +155,30 @@ slides:
 
     #backgrounds
 
-      =image_tag "photo/2015/"
 
-.container
+      =image_tag "photo/2015/parade/10956258_570325406442466_40013393305004875_n.jpg"
+      =image_tag "photo/2015/parade/11102974_570561949752145_6965950625691294329_n.jpg"
+      =image_tag "photo/2015/vypusk/13320400_1122494067818898_2033797681325612429_o.jpg"
+      =image_tag "photo/2015/parade/11351121_570362376438769_4437292833967242234_n.jpg"
+      =image_tag "photo/2015/rizdvo_yokohama/IMG_8978.jpg"
+      =image_tag "photo/2015/vypusk/13323622_1122495194485452_8270770643032113105_o.jpg"
+      =image_tag "photo/2015/vypusk/13340300_1122492874485684_2725720516005391088_o.jpg"
+      =image_tag "photo/2015/rizdvo_yokohama/IMG_8987.jpg"
+
+      =image_tag "photo/2015/vypusk/13316832_1122494911152147_388458294307036086_o.jpg"
+      =image_tag "photo/2015/vypusk/13316884_1122494997818805_8139159266676183869_o.jpg"
+      =image_tag "photo/2015/parade/11351293_570325103109163_977556320719530490_n.jpg"
+      =image_tag "photo/2015/rizdvo_yokohama/IMG_8972.jpg"
+      =image_tag "photo/2015/vypusk/13320369_1122492177819087_8212762155568368469_o.jpg"
+      =image_tag "photo/2015/vypusk/IMG_0692.jpg"
+      =image_tag "photo/2015/vypusk/13320406_1122493044485667_385069500151900998_o.jpg"
+      =image_tag "photo/2015/vypusk/13320472_1122503307817974_5005345399236313965_o.jpg"
+
+
+.container-fluid
   .row.white
 
-    h1.centered Відео
+    h1.centered Відео та фото
     hr
 
   .container
@@ -168,31 +186,48 @@ slides:
 
       = partial "components/albums_container" do
 
+        h1.centered Фестиваль #{q "День України"}
         p.centered Записи з другого Українського Фестивалю #{q "День України"} в м. Йокогама 15 листопада 2015.
 
-        = partial "components/video_card", locals: { id: "i0M6aVQOPqE", title: "Трейлер", source: :youtube }
-        = partial "components/video_card", locals: { id: "FQvFdIoVrm0", title: "Перше відділення фестивалю", source: :youtube }
-        = partial "components/video_card", locals: { id: "XHD81TMxF5s", title: "Друге відлілення фестивалю", source: :youtube }
-
+        = youtube id: "i0M6aVQOPqE", title: "Трейлер"
+        = youtube id: "FQvFdIoVrm0", title: "Перше відділення концерту"
+        = youtube id: "XHD81TMxF5s", title: "Друге відлілення"
 
       = partial "components/albums_container" do
-        h2.centered Українське різдво в Йокогамі
+
+        .row
+          h1.centered Українське різдво в Йокогамі
+          hr
 
 
-        = partial "components/video_card", locals: { id: "bwtzhuNmV6o", title: "", source: :youtube }
+        .col-md-8.col-md-offset-1.col-lg-6.col-lg-offset-3
+          p.text-justify В листопаді-грудні 2015 року українська громада #{q "Краяни"} і школа #{q "Джерельце"} приймали участь в організації та проведенні виставки #{q "Українське Різдво"}. Уряд Йокогами надав для оздоблення музей "Будинок дипломата". В грудні також учні та батьки школи дали концертний виступ в парку біля музею.
+        .row
+          = youtube id: "bwtzhuNmV6o", title: "Виступ біля Будинку Дипломата"
+          = slideshow :rizdvo
 
+      = partial "components/albums_container" do
 
-        .container.row
-        p В листопді-грудні 2015 року українська громада #{q "Краяни"} і школа #{q "Джерельце"} приймали участь в організації та проведенні Українського Різдва. Для цього уряд Йокогами надав для оздоблення музей "Будинок дипломата". В грудні також учні та батьки школи дали концертний виступ в парку біля музею.
-
-        .col-md-6
-          h2.centered Свято Святого Миколая у #{q "Джерельці"}
-
-          = partial "components/video_card", locals: { id: "nXzI1_PC_po", title: "", source: :youtube }
+        h1.centered Свято Святого Миколая у #{q "Джерельці"}
         hr
-      .row
-        .col-md-6
 
-          = partial "components/video_card", locals: { id: "_LX2lEC4uJE", title: "Мурчик-няв", source: :youtube }
-          p Виступ наймолодшої групи на святі Колодія. Українська школа „Джерельце“ в Токіо, 2016 рік.
-          .row
+        p.centered 20 грудня 2015 року.
+
+        = youtube id: "nXzI1_PC_po", title: "Свято Святого Миколая"
+        = slideshow "mykolaya"
+
+      = partial "components/albums_container" do
+
+        h1.centered Свято Колодія, 2016
+        hr
+        p.centered 20 берерзня 2016 року. Виступ наймолодшої групи на святі Колодія.
+
+        = youtube id: "_LX2lEC4uJE", title: "Мурчик-няв, молодша група."
+        = slideshow "kolodiya"
+
+      = partial "components/albums_container" do
+        h1.centered Останній дзвінок
+        hr
+
+        .row
+          = slideshow "vypusk"

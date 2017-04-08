@@ -5,14 +5,14 @@
     hr.centered
     .container
       .row
-        .col-sm-10.col-md-8
-          p На цій сторінці зібрані відео та фотоматеріали з заходів та уроків Української школи #{q "Джерельце"}, фестивалів, концертів та інших подій за участі учнів та батьків школи.
+        .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
+          p.centered На цій сторінці зібрані відео та фотоматеріали з заходів та уроків Української школи #{q "Джерельце"}, фестивалів, концертів та інших подій за участі учнів та батьків школи.
 
 
 
     .row
       = partial "components/albums_container" do
-        / = partial "cards/2015"
+        = partial "cards/2015"
         = partial "cards/2014"
         = partial "cards/2013"
         = partial "cards/2012"
