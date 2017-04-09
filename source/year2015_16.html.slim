@@ -2,6 +2,10 @@
 layout: layout
 
 slides:
+  uroky:
+    items: [IMG_4348.jpg,  IMG_4349.jpg,  IMG_4350.jpg,  IMG_4351.jpg,  IMG_4352.jpg,  IMG_4353.jpg,  IMG_4354.jpg,  IMG_4355.jpg,  IMG_4356.jpg,  IMG_4357.jpg,  IMG_4358.jpg,  IMG_4359.jpg,  IMG_4360.jpg,  IMG_4361.jpg,  IMG_4362.jpg,  IMG_4363.jpg,  IMG_4364.jpg,  IMG_4365.jpg,  IMG_4367.jpg,  IMG_4368.jpg,  IMG_4369.jpg,  IMG_4370.jpg,  IMG_4371.jpg,  IMG_4372.jpg,  IMG_4373.jpg,  IMG_4374.jpg,  IMG_4375.jpg,  IMG_4376.jpg,  IMG_4377.jpg,  IMG_4378.jpg,  IMG_4379.jpg,  IMG_4380.jpg]
+    base: photo/2015/uroky
+
   kolodiya:
     items:
       - IMG_9510.jpg
@@ -183,6 +187,12 @@ slides:
 
   .container
     .row
+
+      = partial "components/albums_container" do
+        h1.centered Уроки
+        hr
+
+        = slideshow "uroky"
 
       = partial "components/albums_container" do
 
