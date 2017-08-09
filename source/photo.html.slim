@@ -39,4 +39,24 @@ layout: layout
       =image_tag "photo/bg/IMG_4731.jpg"
       =image_tag "photo/bg/IMG_4795.jpg"
 
-= partial :photo_page_content
+#photo.container[name="photo"]
+  .row.white
+    br
+    h1.centered Фотоальбоми та відео
+    hr.centered
+      .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
+          p.centered На цій сторінці зібрані відео та фотоматеріали з заходів та уроків Української школи #{q "Джерельце"}, фестивалів, концертів та інших подій за участі учнів та батьків школи.
+
+
+
+    = partial "components/albums_container" do
+      = partial "cards/2016"
+      = partial "cards/2015"
+      = partial "cards/2014"
+      = partial "cards/2013"
+      = partial "cards/2012"
+      = partial "cards/2011"
+      = partial "cards/2010"
+      = partial "cards/2009"
+
+= partial "maibutne"

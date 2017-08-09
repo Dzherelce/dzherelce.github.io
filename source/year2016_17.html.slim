@@ -1,0 +1,100 @@
+---
+layout: layout
+
+slides:
+  koralli:
+    base: photo/2016/koralli
+    items: [IMG_1890.jpg, IMG_1891.jpg, IMG_1893.jpg, IMG_1894.jpg, IMG_1897.jpg, IMG_1901.jpg, IMG_1902.jpg, IMG_1908.jpg, IMG_1920.jpg, IMG_1923.jpg]
+
+  uroky:
+    items: [IMG_4202.jpg, IMG_4207.jpg, IMG_4210.jpg, IMG_4215.jpg, IMG_4219.jpg, IMG_4220.jpg, IMG_4222.jpg, IMG_4224.jpg, IMG_4226.jpg, IMG_4232.jpg, IMG_4233.jpg, IMG_4235.jpg, IMG_4236.jpg]
+    base: photo/2016/uroky
+
+  vypusk:
+    base: photo/2016/vypusk
+    items: [IMG_4284.jpg, IMG_4292.jpg, IMG_4304.jpg, IMG_4307.jpg, IMG_4311.jpg, IMG_4314.jpg, IMG_4315.jpg, IMG_4318.jpg, IMG_4319.jpg, IMG_4322.jpg, IMG_4327.jpg, IMG_4342.jpg]
+
+  rizdvo:
+    base: photo/2016/rizdvo
+    items: [15936844_1343005865767716_467701132037213194_o.jpg, 15994335_1343006542434315_9199649183547948560_o.jpg, 16107312_1343005342434435_589447667444841103_o.jpg, 16113132_1343005535767749_5469410694885234257_o.jpg, 15937022_1343007159100920_8870303911221448212_o.jpg, 15994671_1343006895767613_3635992405874153716_o.jpg, 16107317_1343007429100893_6269967663032360261_o.jpg, 16113147_1343007425767560_8097521105028664750_o.jpg, 15972686_1343007155767587_1055973017491391593_o.jpg, 15995264_1343005455767757_5337451989900517382_o.jpg, 16107325_1343005872434382_1037005014461643682_o.jpg, 15975164_1343006189101017_3800883495418530375_o.jpg, 16107165_1343005112434458_7008923539759644816_o.jpg, 16112581_1343005119101124_6994233709551330576_o.jpg]
+
+  kolodiya:
+    base: photo/2016/kolodiya
+    items: [IMG_3744.jpg, IMG_3746.jpg, IMG_3748.jpg, IMG_3750.jpg, IMG_3753.jpg, IMG_3755.jpg, IMG_3758.jpg, IMG_3761.jpg, IMG_3763.jpg, IMG_3766.jpg, IMG_3768.jpg, IMG_3770.jpg, IMG_3774.jpg, IMG_3781.jpg, IMG_3785.jpg, IMG_3745.jpg, IMG_3747.jpg, IMG_3749.jpg, IMG_3752.jpg, IMG_3754.jpg, IMG_3756.jpg, IMG_3760.jpg, IMG_3762.jpg, IMG_3765.jpg, IMG_3767.jpg, IMG_3769.jpg, IMG_3771.jpg, IMG_3777.jpg, IMG_3782.jpg, IMG_3794.jpg]
+
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2016-2017
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+
+      =image_tag "photo/2016/bg/15936844_1343005865767716_467701132037213194_o.jpg"
+      =image_tag "photo/2016/bg/15994671_1343006895767613_3635992405874153716_o.jpg"
+      =image_tag "photo/2016/bg/16112581_1343005119101124_6994233709551330576_o.jpg"
+      =image_tag "photo/2016/bg/IMG_4128.jpg"
+      =image_tag "photo/2016/bg/IMG_4319.jpg"
+      =image_tag "photo/2016/bg/IMG_4162.jpg"
+      =image_tag "photo/2016/bg/IMG_4232.jpg"
+      =image_tag "photo/2016/bg/IMG_4138.jpg"
+      =image_tag "photo/2016/bg/IMG_4177.jpg"
+      =image_tag "photo/2016/bg/15995264_1343005455767757_5337451989900517382_o.jpg"
+      =image_tag "photo/2016/bg/16107317_1343007429100893_6269967663032360261_o.jpg"
+      =image_tag "photo/2016/bg/IMG_4207.jpg"
+      =image_tag "photo/2016/bg/IMG_3747.jpg"
+      =image_tag "photo/2016/bg/IMG_3753.jpg"
+      =image_tag "photo/2016/bg/IMG_4318.jpg"
+      =image_tag "photo/2016/bg/IMG_3765.jpg"
+      =image_tag "photo/2016/bg/IMG_3770.jpg"
+      =image_tag "photo/2016/bg/IMG_4210.jpg"
+      =image_tag "photo/2016/bg/IMG_4219.jpg"
+      =image_tag "photo/2016/bg/IMG_4140(1).jpg"
+      =image_tag "photo/2016/bg/IMG_4284.jpg"
+      =image_tag "photo/2016/bg/IMG_4304.jpg"
+      =image_tag "photo/2016/bg/IMG_4342.jpg"
+      =image_tag "photo/2016/bg/IMG_3745.jpg"
+      =image_tag "photo/2016/bg/IMG_3756.jpg"
+
+.container-fluid
+  .row.white
+
+    h1.centered Відео та фото
+    hr
+
+  .container
+    .row
+
+      = partial "components/albums_container" do
+
+        h1.centered Останній дзвінок
+        hr
+        p.centered #{q "Кицькин дім"}, вистава учнів школи #{q "Джерельце"} приготована і показана для батьків школярів на свято останнього дзвінка. 28 травня 2017 року.
+
+        = vimeo id: "222075858", title: "Випускна вистава #{q "Кицькин дім"}"
+
+        = slideshow "vypusk"
+
+
+      = partial "components/albums_container" do
+
+        h1.centered Третій фестиваль #{q "День України"}.
+        p.centered Фестиваль #{q "День України"} в 2016 році проводився під гаслом #{q "З Україною в серці"}, Акасака Кумін хол (赤坂区民センター), Токіо 20 листопада 2016. Записи номерів з участю дітей школи на фестивалі #{q "День України"}.
+
+        = vimeo id: "196067731", title: "Відкриття концерту"
+        = vimeo id: "200457440", title: "Зозуля"
+        = vimeo id: "196068667", title: "Дикі танці"
+        = vimeo id: "196291727", title: "Українські народні танці "
+        = vimeo id: "198641827", title: "Пантоміма #{q "Муха"}"
+
+      = partial "components/albums_container" do
+        h1.centered Фотографії з уроків та заходів #{q "Джерельця"}
+        hr
+        p.centered На уроках #{q "Джерельця"}, святкування Різдва та Колодія, відвідини школи сопілкарем та трембітарем з рок-гурту #{q "Кораллі"}
+
+        = slideshow "uroky"
+        = slideshow "rizdvo"
+        = slideshow "kolodiya"
+        = slideshow "koralli"
