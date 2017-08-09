@@ -34,8 +34,8 @@ end
 
 helpers do
 
-  def slideshow(slideshow_name)
-    partial "components/photo_slides", locals: {slide_show: slideshow_name.to_s }
+  def slideshow(slideshow_name, title="Слайдшоу")
+    partial "components/photo_slides", locals: {slide_show: slideshow_name.to_s, title: title}
   end
 
   def youtube(id: "", title: "")
