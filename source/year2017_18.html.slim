@@ -1,0 +1,41 @@
+---
+layout: layout
+
+slides:
+  1st:
+    base: photo/2017/1st
+    items: [IMG_4540.jpg, IMG_4542.jpg, IMG_4548.jpg, IMG_4553.jpg, IMG_4561.jpg, IMG_4568.jpg, IMG_4573.jpg, IMG_4583.jpg, IMG_4586.jpg, IMG_4589.jpg, IMG_4600.jpg, IMG_4610.jpg, IMG_4614.jpg, IMG_4618_1.jpg, IMG_4541.jpg, IMG_4543.jpg, IMG_4552.jpg, IMG_4554.jpg, IMG_4564.jpg, IMG_4570.jpg, IMG_4579.jpg, IMG_4585.jpg, IMG_4588.jpg, IMG_4595.jpg, IMG_4604.jpg, IMG_4612.jpg, IMG_4618.jpg]
+
+
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2016-2017
+    p Укра¿нська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+
+      =image_tag "photo/2017/1st/IMG_4553.jpg"
+      =image_tag "photo/2017/1st/IMG_4554.jpg"
+      =image_tag "photo/2017/1st/IMG_4564.jpg"
+      =image_tag "photo/2017/1st/IMG_4585.jpg"
+      =image_tag "photo/2017/1st/IMG_4589.jpg"
+
+.container-fluid
+  .row.white
+
+    h1.centered Відео та фото
+    hr
+
+  .container
+    .row
+
+      = partial "components/albums_container" do
+
+        h1.centered Перший дзвінок
+        hr
+        p.centered Вересень 2017, Свято Першого Дзвінка.
+
+        = slideshow "1st"
