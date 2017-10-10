@@ -3,7 +3,7 @@
 //= require bootstrap.min
 //= require retina
 //= require jquery.easing.1.3
-//= require smoothscroll
+//= require jquery.smooth-scroll
 //= require rotate_bg
 //= require resize_inline_image
 //= require google_analytics
