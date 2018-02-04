@@ -28,6 +28,26 @@
             background-color: transparent;
             cursor: pointer;
         }
+        .next-button {
+            position: absolute;
+            right: 0.5ex;
+            bottom: 0.5ex;
+            width: 1em;
+            height: 1em;
+            color: white;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .prev-button {
+            position: absolute;
+            left: 0.5ex;
+            bottom: 0.5ex;
+            width: 1em;
+            height: 1em;
+            color: white;
+            background-color: transparent;
+            cursor: pointer;
+        }
     }
     .thumbnail {
         cursor: pointer;

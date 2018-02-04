@@ -21,6 +21,16 @@ function runSlideShow (slideshow_name) {
         return $(this).attr("src");
     }).get();
 
+    $('.next-button').click(function(x) {
+        x.preventDefault();
+        viewer.data('backstretch').next();
+    });
+
+    $('.prev-button').click(function(x) {
+        x.preventDefault();
+        viewer.data('backstretch').prev();
+    });
+
     viewer.show();
     viewer.backstretch(imgArray, {duration: 2000, fade: 1500});
 };
@@ -28,5 +38,5 @@ function runSlideShow (slideshow_name) {
 function stopSlideShow (slideshow_name) {
     var viewer = $('#' + slideshow_name + "_view")
     viewer.hide();
-    viewer.backstretch("destroy");
+    // viewer.backstretch("destroy");
 }

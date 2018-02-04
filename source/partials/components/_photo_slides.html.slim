@@ -10,6 +10,9 @@
 
   .slideshow-viewer[id="#{slide_show}_view"]
     .stop-button.fa.fa-window-close.fa-3x[id="#{slide_show}_stop"]
+    .next-button.fa.fa-arrow-right.fa-3x[id="#{slide_show}_next"]
+    .prev-button.fa.fa-arrow-left.fa-3x[id="#{slide_show}_prev"]
+
   .slideshow-list[id="#{slide_show}_list"]
     - images.each do |image|
       = image_tag "#{base}/#{image}"
