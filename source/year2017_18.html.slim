@@ -4,38 +4,99 @@ layout: layout
 slides:
   1st:
     base: photo/2017/1st
-    items: [IMG_4540.jpg, IMG_4542.jpg, IMG_4548.jpg, IMG_4553.jpg, IMG_4561.jpg, IMG_4568.jpg, IMG_4573.jpg, IMG_4583.jpg, IMG_4586.jpg, IMG_4589.jpg, IMG_4600.jpg, IMG_4610.jpg, IMG_4614.jpg, IMG_4618_1.jpg, IMG_4541.jpg, IMG_4543.jpg, IMG_4552.jpg, IMG_4554.jpg, IMG_4564.jpg, IMG_4570.jpg, IMG_4579.jpg, IMG_4585.jpg, IMG_4588.jpg, IMG_4595.jpg, IMG_4604.jpg, IMG_4612.jpg, IMG_4618.jpg]
+    items: [IMG_4553.jpg, IMG_4540.jpg, IMG_4542.jpg, IMG_4548.jpg, IMG_4561.jpg, IMG_4568.jpg, IMG_4573.jpg, IMG_4583.jpg, IMG_4586.jpg, IMG_4589.jpg, IMG_4600.jpg, IMG_4610.jpg, IMG_4614.jpg, IMG_4618_1.jpg, IMG_4541.jpg, IMG_4543.jpg, IMG_4552.jpg, IMG_4554.jpg, IMG_4564.jpg, IMG_4570.jpg, IMG_4579.jpg, IMG_4585.jpg, IMG_4588.jpg, IMG_4595.jpg, IMG_4604.jpg, IMG_4612.jpg, IMG_4618.jpg]
+
+  malanky:
+    base: photo/2017/malanky
+
+    items: [ IMG_6518.jpg, IMG_0784.jpg, IMG_6504.jpg, IMG_6512.jpg,
+    IMG_6520.jpg, IMG_6521.jpg, IMG_6527.jpg, IMG_6530.jpg,
+    IMG_6532.jpg, IMG_6534.jpg, IMG_6546.jpg, IMG_6548.jpg,
+    IMG_6549.jpg, IMG_6552.jpg, IMG_6557.jpg, IMG_6569.jpg,
+    IMG_6574.jpg ]
+
+  mykolaichyk:
+    base: "photo/2017/mykolaya"
+    items: [IMG_5282-ANIMATION.gif]
+
+  mykolaichyky:
+    base: "photo/2017/mykolaya/mykolaichyky"
+    items: [IMG_5252.jpg, IMG_5253.jpg, IMG_5255.jpg, IMG_5257.jpg,
+      IMG_5260.jpg, IMG_5266.jpg, IMG_5269.jpg, IMG_5275.jpg,
+      IMG_5277.jpg, IMG_5281.jpg, IMG_5287.jpg, IMG_5291.jpg,
+      IMG_5294.jpg, IMG_5297.jpg, IMG_5299.jpg, IMG_5305.jpg, ]
+
+  podarunky:
+
+    base: "photo/2017/mykolaya/podarunky"
+    items: [IMG_5365.jpg,  IMG_5370.jpg,  IMG_5375.jpg,  IMG_5379.jpg,
+      IMG_5387.jpg,  IMG_5397.jpg,  IMG_5413.jpg,  IMG_5417.jpg,  IMG_5431.jpg,
+      IMG_5445.jpg,  IMG_5463.jpg,  IMG_5483.jpg,  IMG_5514.jpg,  IMG_5528.jpg,
+      IMG_5369.jpg,  IMG_5372.jpg,  IMG_5376.jpg,  IMG_5382.jpg,  IMG_5391.jpg,
+      IMG_5406.jpg,  IMG_5415.jpg,  IMG_5421.jpg,  IMG_5437.jpg,  IMG_5449.jpg,
+      IMG_5474.jpg,  IMG_5504.jpg,  IMG_5522.jpg,  IMG_5537.jpg, ]
+
+  uroky:
+    base: "photo/2017/uroky"
+
+    items: [IMG_0040.jpg,  IMG_0059.jpg,  IMG_0061.jpg,  IMG_4786.jpg,
+      IMG_4920.jpg,  IMG_4922.jpg,  IMG_4933.jpg,  IMG_4938.jpg,  IMG_4953.jpg,
+      IMG_4966.jpg,  IMG_5082.jpg,  IMG_5086.jpg,  IMG_5087.jpg,  IMG_5089.jpg,
+      IMG_5091.jpg,  IMG_5097.jpg,  IMG_5099.jpg, ]
 
 
 ---
 
 #headerwrap.image-filter[name="home" ]
   header.clearfix
-    p Навчальний рік 2016-2017
+    p Навчальний рік 2017-2018
     p Укра¿нська школа
       <span> «Джерельце»</span>
 
     #backgrounds
 
       =image_tag "photo/2017/1st/IMG_4553.jpg"
-      =image_tag "photo/2017/1st/IMG_4554.jpg"
-      =image_tag "photo/2017/1st/IMG_4564.jpg"
+      =image_tag "photo/2017/mykolaya/podarunky/IMG_5299.jpg"
+      =image_tag "photo/2017/malanky/IMG_6532.jpg"
       =image_tag "photo/2017/1st/IMG_4585.jpg"
+      =image_tag "photo/2017/mykolaya/podarunky/IMG_5257.jpg"
       =image_tag "photo/2017/1st/IMG_4589.jpg"
+      =image_tag "photo/2017/malanky/IMG_6518.jpg"
+      =image_tag "photo/2017/malanky/IMG_6521.jpg"
+      =image_tag "photo/2017/1st/IMG_4554.jpg"
+      =image_tag "photo/2017/mykolaya/podarunky/IMG_5277.jpg"
+      =image_tag "photo/2017/1st/IMG_4564.jpg"
+      =image_tag "photo/2017/malanky/IMG_6546.jpg"
+
+
 
 .container-fluid
   .row.white
 
-    h1.centered Відео та фото
-    hr
 
   .container
     .row
 
       = partial "components/albums_container" do
 
-        h1.centered Перший дзвінок
+        .row
+        h1.centered Уроки
         hr
-        p.centered Вересень 2017, Свято Першого Дзвінка.
+        = slideshow "uroky", "На уроках #{q "Джерельця"}"
+        = vimeo id: "254155374", title: "Вони ростуть так швидко"
+        = vimeo id: "254155401", title: "Уроки в школі #{q "Джерельце"}"
 
-        = slideshow "1st"
+
+        .row
+        h1.centered Свята у #{q "Джерельці"}
+        hr
+        = slideshow "1st", "Вересень 2017, Свято Першого Дзвінка."
+        = slideshow "malanky", "Січень 2018, Маланка з Василем козу водили, ворожили та господарів віншували."
+        .row
+        h1.centered Свято Св. Миколая
+        p 17 грудня 2017 року
+        hr
+        = slideshow "mykolaichyky", "Грудень 2017, учні розписують Миколайчики"
+        = slideshow "mykolaichyk", "Миколайчики розписані учнями на святі Св. Миколая"
+        .row
+        = slideshow "podarunky", "Подарунки від Св. Миколая"
