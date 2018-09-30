@@ -32,7 +32,9 @@ function runSlideShow (slideshow_name) {
     });
 
     viewer.show();
-    viewer.backstretch(imgArray, {duration: 2000, fade: 1500});
+    viewer.backstretch(imgArray, {duration: 2000,
+                                  fadeFirst: false,
+                                  fade: 1500});
 };
 
 function stopSlideShow (slideshow_name) {
