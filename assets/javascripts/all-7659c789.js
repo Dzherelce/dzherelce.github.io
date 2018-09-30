@@ -1,7 +1,7 @@
 /*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery.min.map
 */
-function setInlineImageHeight(){var t=$("#navbar-main").children().first().children().first().height(),e=$(window).height(),n=$(window).width();$(".inline-image img").each(function(){$(this).css({"max-height":.9*(e-t)}),$(this).css({"max-width":.9*n})})}function runSlideShow(t){var e=$("#"+t+"_view"),n=$("#"+t+"_list img").map(function(){return $(this).attr("src")}).get();$(".next-button").click(function(t){t.preventDefault(),e.data("backstretch").next()}),$(".prev-button").click(function(t){t.preventDefault(),e.data("backstretch").prev()}),e.show(),e.backstretch(n,{duration:2e3,fade:1500})}function stopSlideShow(t){var e=$("#"+t+"_view");e.hide()}/*!
+function setInlineImageHeight(){var t=$("#navbar-main").children().first().children().first().height(),e=$(window).height(),n=$(window).width();$(".inline-image img").each(function(){$(this).css({"max-height":.9*(e-t)}),$(this).css({"max-width":.9*n})})}function runSlideShow(t){var e=$("#"+t+"_view"),n=$("#"+t+"_list img").map(function(){return $(this).attr("src")}).get();$(".next-button").click(function(t){t.preventDefault(),e.data("backstretch").next()}),$(".prev-button").click(function(t){t.preventDefault(),e.data("backstretch").prev()}),e.show(),e.backstretch(n,{duration:2e3,fadeFirst:!1,fade:1500})}function stopSlideShow(t){var e=$("#"+t+"_view");e.hide()}/*!
  * Bootstrap v3.1.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
