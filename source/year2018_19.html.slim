@@ -1,0 +1,45 @@
+---
+layout: layout
+
+slides:
+  1st:
+    base: photo/2018/1st
+    items: [IMG_9141.jpg, IMG_9145.jpg, IMG_9147.jpg, IMG_9148.jpg, IMG_9152.jpg, IMG_9159.jpg, IMG_9165.jpg, IMG_9169.jpg, IMG_9171.jpg, IMG_9181.jpg,]
+
+  karate:
+    base: photo/2018/karate
+    items: [IMG_9219.jpg, IMG_9229.jpg, IMG_9236.jpg, IMG_9238.jpg, IMG_9242.jpg, IMG_9245.jpg,]
+
+
+
+---
+
+#headerwrap.image-filter[name="home" ]
+  header.clearfix
+    p Навчальний рік 2018-2019
+    p Українська школа
+      <span> «Джерельце»</span>
+
+    #backgrounds
+
+      =image_tag "photo/2018/1st/IMG_9141.jpg"
+      =image_tag "photo/2018/1st/IMG_9152.jpg"
+      =image_tag "photo/2018/1st/IMG_9169.jpg"
+      =image_tag "photo/2018/1st/IMG_9242.jpg"
+
+
+
+.container-fluid
+  .row.white
+
+
+  .container
+    .row
+
+      = partial "components/albums_container" do
+
+        .row
+        h1.centered Свята у #{q "Джерельці"}
+        hr
+        = slideshow "1st", "Вересень 2018, Свято Першого Дзвінка і конкурс дитячого малюнку"
+        = slideshow "karate", "Вересень 2018. Діти разом з мамами та вчителями підримали українську команду на змаганнях з Зендокай карате"
