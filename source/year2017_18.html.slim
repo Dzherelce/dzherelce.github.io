@@ -44,6 +44,16 @@ slides:
       IMG_4966.jpg,  IMG_5082.jpg,  IMG_5086.jpg,  IMG_5087.jpg,  IMG_5089.jpg,
       IMG_5091.jpg,  IMG_5097.jpg,  IMG_5099.jpg, ]
 
+  lisova_pisnya:
+    base: "photo/2017/pisnya"
+
+    items: [IMG_2133.jpg, IMG_2135.jpg, IMG_2137.jpg, IMG_2140.jpg,
+      IMG_2147.jpg, IMG_2150.jpg, IMG_2155.jpg, IMG_2165.jpg, IMG_8461.jpg,
+        IMG_8468.jpg, IMG_8471.jpg, IMG_8472.jpg, IMG_8473.jpg, IMG_8475.jpg,
+          IMG_8478.jpg, IMG_8480.jpg, IMG_8486.jpg, IMG_8490.jpg, IMG_8495.jpg,
+            IMG_8498.jpg, IMG_8508.jpg, IMG_8517.jpg, IMG_8519.jpg, IMG_8524.jpg,
+              IMG_8527.jpg, IMG_8543.jpg,]
+
 
 ---
 
@@ -60,6 +70,7 @@ slides:
       =image_tag "photo/2017/malanky/IMG_6532.jpg"
       =image_tag "photo/2017/1st/IMG_4585.jpg"
       =image_tag "photo/2017/mykolaya/podarunky/IMG_5257.jpg"
+      =image_tag "photo/2017/pisnya/IMG_8486.jpg"
       =image_tag "photo/2017/1st/IMG_4589.jpg"
       =image_tag "photo/2017/malanky/IMG_6518.jpg"
       =image_tag "photo/2017/malanky/IMG_6521.jpg"
@@ -67,6 +78,7 @@ slides:
       =image_tag "photo/2017/mykolaya/podarunky/IMG_5277.jpg"
       =image_tag "photo/2017/1st/IMG_4564.jpg"
       =image_tag "photo/2017/malanky/IMG_6546.jpg"
+      =image_tag "photo/2017/pisnya/IMG_2135.jpg"
 
 
 
@@ -98,5 +110,12 @@ slides:
         hr
         = slideshow "mykolaichyky", "Грудень 2017, учні розписують Миколайчики"
         = slideshow "mykolaichyk", "Миколайчики розписані учнями на святі Св. Миколая"
-        .row
+        .row.centered
         = slideshow "podarunky", "Подарунки від Св. Миколая"
+
+        .row
+        hr
+        h1.centered Заключна вистава #{q "Лісова Пісня"}
+        h3.centered За мотивами поеми Лесі Українки
+        = vimeo id: "285697409", title: "Відео #{q "Лісова Пісня"}"
+        = slideshow "lisova_pisnya", "Слайдшоу"
