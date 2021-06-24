@@ -11,3 +11,9 @@ task :publish do
   sh "cd build && git add -A && git commit -m \"At #{DATE} #{comment}\" && git push #{REMOTE} #{PUBLISH_BRANCH}"
   sh "git push origin #{SOURCE_BRANCH}"
 end
+
+desc "compile and publish the site to Github using docker"
+task :pub_docker do
+  sh "git checkout #{SOURCE_BRANCH}"
+  comment = %x{ git log -n 1 --no-merges --format=%s%b }.chomp.strip
+  
