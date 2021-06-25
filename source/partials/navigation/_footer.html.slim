@@ -17,17 +17,12 @@
         | (потрібна попередня реєстрація)
 
         br
-        span.icon.icon-envelop>
-        => mail_to "kraiany@yahoogroups.com"
-        | (потрібна попередня #{link_to "реєстрація)", "https://groups.yahoo.com/neo/groups/kraiany/info"}
-
-        br
         span.icon.icon-mobile>
         | 090-9318-3293 (Наталя Ковальова),
           090-8119-0423 (Наталя Лисенко)
         br
         span.icon.icon-envelop>
-        = mail_to "natalya.kovalova@gmail.com"
+        = mail_to "natalya.kovalova@kraiany.org"
 
 
         br
@@ -38,9 +33,20 @@
         = link_to "https://www.facebook.com/ukrainians.japan", "https://www.facebook.com/ukrainians.japan"
 
     .col-md-4
-      h3 Товариство «Краяни»
+      h3
+        span.icon.icon-home>
+        | НПО «Краяни»
 
-      p «Краяни» - товариство українців, що проживують в Японії - засноване у 2000-му році. На даний час гуртується навколо одноіменної #{kraiany "групи Фейсбук"}.
+      span Асоціація дружби Японія-Україна. Українська громада Японії працює з 2000-го року.
+
+      br
+      span.icon.icon-link>
+      => link_to "http://www.kraiany.org/", "http://www.kraiany.org/"
+
+      p
+        span.icon.icon-envelop>
+        => mail_to "contact@kraiany.org"
+
 
     .col-md-2.centered
       .inline-image.shadowed
