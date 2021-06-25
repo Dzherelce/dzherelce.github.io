@@ -18,3 +18,24 @@
 ## Publishing
 
     rake publish
+
+## Setting the repository
+
+```
+
+git clone git@github.com:Dzherelce/dzherelce.github.io.git
+mkdir build
+git clone git@github.com:Dzherelce/dzherelce.github.io.git build
+cd build
+gco master
+
+```
+
+## Development with docker
+
+### View
+  docker run -it  --rm -v $(pwd):/app -p 4567:4567 dzerelce
+
+### Build
+
+  docker run -it  --rm -v $(pwd):/app -p 4567:4567 dzerelce build
