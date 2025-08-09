@@ -1,6 +1,24 @@
 # dzerelce.github.io
 Сторінка школи
 
+
+# MOVED
+
+Сторінка школи Джерельце перенесена на Google Sites за адресою https://sites.google.com/kraiany.org/dzherelce - через HTTP redirect в файлі index.html
+Підсторінки (фото, відео) доступні за адресою https://dzherelce.github.io/<назва репозиторію>
+
+```
+year2010_11/
+year2013_14/
+year2014_15/
+year2015_16/
+year2016_17/
+year2017_18/
+year2018_19/
+```
+Даний репозиторій архівується.
+
+
 ## Setup
 
 - Install Ruby
