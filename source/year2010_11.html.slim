@@ -23,7 +23,7 @@ layout: layout
       =image_tag "photo/2010/IMG_9700.jpg"
       =image_tag "photo/2010/IMG_9709.jpg"
 
-= partial "components/albums_container" do
+= partial "partials/components/albums_container" do
   = year_album link: "http://dzherelce.github.io/web_album_2010_2011", title: "Фотоальбом", image: "photo/2010/2010_2011.png" do
     p Уроки та свята #{q "Джерельця"}
 
@@ -32,11 +32,11 @@ layout: layout
   hr
   p.centered Різдвяний Вертеп поставлений для дітей #{q "Джерельця"} батьками та вчителями школи. (2010 рік)
 
-  = partial "components/video_card",
+  = partial "partials/components/video_card",
   locals: { source: :youtube, id: "yfs93n-JYPY", title: "Перша частина"  }
 
-  = partial "components/video_card",
+  = partial "partials/components/video_card",
   locals: { id: "yfs93n-JYPY" , source: :youtube,  title: "Друга частина"}
 
-  = partial "components/video_card",
+  = partial "partials/components/video_card",
   locals: { id: "EztiSKubHXU", source: :youtube,  title: "Слайди" }

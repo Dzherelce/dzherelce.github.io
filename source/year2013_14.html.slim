@@ -39,7 +39,7 @@ layout: layout
   p
 .container
 
-  = partial "components/albums_container" do
+  = partial "partials/components/albums_container" do
     = year_album link: "http://dzherelce.github.io/Album_2013_2014/", title: "Фотоальбом", image: "https://github.com/Dzherelce/Album_2013_2014/raw/master/source/assets/images/00_obkladynka_1st.jpg" do
       p Сторінки випускного фотоальбому #{q "Джерельця"}
 
@@ -47,7 +47,7 @@ layout: layout
       p Свято Колодія, вареники 30 березня 2014, у школі #{q "Джерельце"}.
 
 
-  = partial "components/albums_container" do
+  = partial "partials/components/albums_container" do
 
     h2.centered Шевченківські читання
     hr
@@ -55,9 +55,9 @@ layout: layout
 
     p.centered Діти #{q "Джерельця"} читають вірші Шевченка на день народження Кобзаря. 9 березня 2014 року.
 
-    = partial "components/video_card", locals: { id: "n2JIPDZWAHk", source: :youtube }
-    = partial "components/video_card", locals: { id: "jEh5VKj7q98", source: :youtube }
-    = partial "components/video_card", locals: { id: "TliAKcKr7ag", source: :youtube }
+    = partial "partials/components/video_card", locals: { id: "n2JIPDZWAHk", source: :youtube }
+    = partial "partials/components/video_card", locals: { id: "jEh5VKj7q98", source: :youtube }
+    = partial "partials/components/video_card", locals: { id: "TliAKcKr7ag", source: :youtube }
 
-    = partial "components/video_card", locals: { id: "lBhWJYhJ3WI", source: :youtube }
-    = partial "components/video_card", locals: { id: "R_yGi_1_afE", source: :youtube }
+    = partial "partials/components/video_card", locals: { id: "lBhWJYhJ3WI", source: :youtube }
+    = partial "partials/components/video_card", locals: { id: "R_yGi_1_afE", source: :youtube }

@@ -9,7 +9,7 @@ set :index_file, 'index.html'
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
-set :partials_dir, 'partials'
+# set :partials_dir, 'partials' -- not supportted in middleman v4
 set :haml, { :format => :html5 }
 set :fonts_dir,  "fonts-folder"
 
@@ -18,7 +18,7 @@ ignore '*.less'
 # don't precompile assets when middleman startup, but only when it's requested.
 #set :debug_assets, true
 
-activate :livereload
+#activate :livereload
 
 activate :directory_indexes
 

@@ -9,7 +9,7 @@
 # Deploy:
 # docker run -it  --rm -v $(pwd):/app -v ~/.gitconfig:/root/.gitconfig  -p 4567:4567 dzerelce deploy
 #
-FROM ruby:2.5.0
+FROM ruby:3.4.1
 
 # Expose ports.
 EXPOSE 4567

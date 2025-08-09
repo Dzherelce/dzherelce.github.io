@@ -34,7 +34,7 @@ layout: layout
       =image_tag "photo/2014/IMG_8250.jpg"
 
 
-= partial "components/albums_container" do
+= partial "partials/components/albums_container" do
   = year_album link: "http://dzherelce.github.io/Album_2014_2015/", title: "Фотоальбом", image: "https://github.com/Dzherelce/Album_2014_2015/raw/master/source/assets/images/01-pershastorinka-x1.jpg" do
     p Сторінки випускного фотоальбому #{q "Джерельця"}
 
@@ -43,4 +43,4 @@ layout: layout
 
   p.centered Виступ дітей та батьків Джерельця з Катериною Гудзій на Першому Українському Фестивалі в центральній Японії, Йокогама, жовтень 2014 р.
 
-  = partial "components/video_card", locals: { id: "BeWmCGYChAI", source: :youtube }
+  = partial "partials/components/video_card", locals: { id: "BeWmCGYChAI", source: :youtube }

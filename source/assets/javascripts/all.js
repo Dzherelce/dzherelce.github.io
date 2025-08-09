@@ -1,18 +1,13 @@
-//= require jquery.min
-//= require modernizr.custom
-//= require bootstrap.min
-//= require retina
-//= require jquery.easing.1.3
-//= require jquery.smooth-scroll
-//= require rotate_bg
-//= require resize_inline_image
-//= require google_analytics
-//= require jquery.backstretch.min
-$(document).ready(function() {
-
-
-
-});
+= require jquery.min
+= require modernizr.custom
+= require bootstrap.min
+= require retina
+= require jquery.easing.1.3
+= require jquery.smooth-scroll
+= require rotate_bg
+= require resize_inline_image
+= require google_analytics
+= require jquery.backstretch.min
 
 function runSlideShow (slideshow_name) {
     var viewer = $('#' + slideshow_name + "_view")

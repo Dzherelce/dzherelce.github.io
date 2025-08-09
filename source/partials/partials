@@ -1,0 +1,15 @@
+  /Users/dmytro/Development/kraiany/dzherelce.github.io/source/partials:
+  drwxr-xr-x  14 dmytro  staff   448 Aug  4 11:11 .
+  drwxr-xr-x  15 dmytro  staff   480 Aug  4 11:11 ..
+  -rw-r--r--   1 dmytro  staff   298 Aug  4 11:11 _maibutne.html.slim
+  -rw-r--r--   1 dmytro  staff   265 Aug  4 11:11 _photo_link.html.slim
+  -rw-r--r--   1 dmytro  staff   789 Aug  4 11:11 _photo_page_content.html.slim
+  -rw-r--r--   1 dmytro  staff  4016 Aug  4 11:11 about.html.slim
+  -rw-r--r--   1 dmytro  staff  1152 Aug  4 11:11 address.html.slim
+  drwxr-xr-x  12 dmytro  staff   384 Aug  4 11:11 cards
+  drwxr-xr-x   8 dmytro  staff   256 Aug  4 11:11 components
+  -rw-r--r--   1 dmytro  staff   545 Aug  4 11:11 _home.html.slim
+  drwxr-xr-x   5 dmytro  staff   160 Aug  4 11:11 navigation
+  -rw-r--r--   1 dmytro  staff  2023 Aug  4 11:11 register.html.slim
+  -rw-r--r--   1 dmytro  staff  2080 Aug  4 11:11 schedule.html.slim
+  -rw-r--r--   1 dmytro  staff  2358 Aug  4 11:11 teachers.html.slim
